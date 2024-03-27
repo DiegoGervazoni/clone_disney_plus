@@ -2,7 +2,8 @@
 @use "variaveis";
 @use "shows";
 @use "plans";
-@use 'available-devices';
+@use "available-devices";
+@use "faq";
 
 @font-face {
   font-family: Avenir;
@@ -66,6 +67,14 @@ body {
 
 .title--small {
   @include title(28px);
+}
+
+.text--subItem {
+  list-style-type: disc;
+  li {
+    padding-top: 20px;
+    margin-left: 40px;
+  }
 }
 
 .button {
